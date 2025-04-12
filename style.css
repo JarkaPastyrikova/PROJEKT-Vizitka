@@ -1,16 +1,110 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
 html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+*, ::after, ::before { box-sizing: inherit; 
+    margin: 0;
+    padding: 0;
+
+   }
+
+.nunito-normal {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+.nunito-bold {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
 
 /*
 BARVY:
-šedá na pozadí stránky:		 #b2bec3
+šedá na pozadí stránky:	   #b2bec3
 červená na hlavní nadpis:  #d63031
 
-tlačítko Twitter:					 #1da1f2
-tlačítko Twitter aktivní:	 #0b7bc1
+tlačítko Twitter:			 #1da1f2
+tlačítkso Twitter aktivní:	 #0b7bc1
 
-tlačítko Facebook:				 #3b5998
+tlačítko Facebook:		    #3b5998
 tlačítko Facebook aktivní: #2b406e
 */
 
+body {
+
+    background-color: #b2bec3;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+   
+}
+
+.vizitka {
+    width: 550px;
+    margin: 150px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+
+img {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: absolute;
+        top: -75px;
+        right: -75px;
+
+}
+
+h1 {
+    font-size: 36px;
+    color: #d63031;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.prvni {
+    margin-bottom: 30px;
+}
+
+.twitter,
+.facebook {
+    display: block;
+    width: 100%;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+}
+
+.twitter {
+    background-color: #1da1f2;
+    margin-top: 30px;
+}
+
+.twitter:hover {
+    background-color: #0b7bc1;
+
+}
+
+.facebook {
+    background-color: #3b5998;
+    margin-top: 5px;
+   
+}
+
+.facebook:hover {
+    background-color: #2b406e;
+
+}
